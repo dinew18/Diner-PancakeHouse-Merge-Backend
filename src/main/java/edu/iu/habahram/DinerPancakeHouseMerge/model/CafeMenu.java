@@ -1,6 +1,7 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class CafeMenu {
@@ -28,6 +29,8 @@ public class CafeMenu {
     public Map<String, MenuItem> getItems() {
         return menuItems;
     }
-
+    public Iterator<MenuItem> createIterator() {
+        return menuItems.values().iterator();
+    }
 
 }
